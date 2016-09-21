@@ -1,0 +1,17 @@
+body {
+    background-color: gray;
+    color: white;
+}
+
+h1 {
+    color: red;
+}
+
+h2 {
+    color: orange;
+    text-align: center;
+    }
+
+h1 {
+    color: grey;
+}
