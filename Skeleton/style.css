@@ -1,0 +1,120 @@
+@media only screen and (min-width: 600px){
+body
+{
+    text-align: center;
+    background-color: darkgray;
+    font-family: 'Raleway', sans-serif;
+     color: whitesmoke;
+}
+
+h1
+{
+    font-family: 'Monoton', cursive;
+    font-size: 100;
+    font-weight: normal;
+}
+h2
+{
+    font-size: 50;
+    font-weight: lighter;
+    color: lightgray;
+
+}
+
+
+h3
+{
+    font-size: 30;
+    padding-left: 400px;
+    padding-right: 400px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color:grey;
+}
+.container {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    color:grey;
+    /*for demo purposes only */
+    background: lightgrey;
+    box-sizing: border-box;
+}
+
+.column-one {
+    order: 1;
+}
+.column-two {
+    order: 2;
+}
+.column-three {
+    order: 3;
+}
+
+/*taken from stack overflow */
+
+}
+
+@media only screen and (max-width: 600px){
+
+body
+{
+    text-align: center;
+    background-color: darkgray;
+    font-family: 'Raleway', sans-serif;
+     color: black;
+}
+
+h1
+{
+    font-family: 'Monoton', cursive;
+    font-size: 50;
+    font-weight: normal;
+}
+h2
+{
+    font-size: 25;
+    font-weight: lighter;
+    color: lightgray;
+
+}
+
+
+h3
+{
+    font-size: 15;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color:grey;
+}
+.container {
+    display: flex;
+}
+
+.column {
+    flex: 2;
+    color:grey;
+    /*for demo purposes only */
+    background: lightgrey;
+    box-sizing: border-box;
+}
+
+.column-one {
+    order: 1;
+}
+.column-two {
+    order: 1;
+}
+.column-three {
+    order: 1;
+}
+
+/*taken from stack overflow */
+
+}
+
+}
