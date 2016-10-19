@@ -1,0 +1,16 @@
+{
+  "transport": "ftp",
+  "uploadOnSave": false,
+  "useAtomicWrites": false,
+  "deleteLocal": false,
+  "hostname": "sites.bxmc.poly.edu",
+  "port": "21",
+  "target": "/Volumes/RAID/Users/akashkumar/Sites/webDev",
+  "ignore": [
+    ".remote-sync.json",
+    ".git/**"
+  ],
+  "username": "akashkumar",
+  "password": "@Sm1dg388",
+  "watch": []
+}
