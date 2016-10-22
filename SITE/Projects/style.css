@@ -1,0 +1,30 @@
+html,body {
+ height:100%;  /* new */
+}
+
+ul#navigation {
+    height: 70px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-width: 1px 0;    
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Cham-WebFont', Arial, sans-serif;
+    background-color: #000;
+    position: fixed;   /* new */
+    bottom: 0;  /* new */
+    width: 100%;  /* new */
+}
+
+ul#navigation li {
+    display: inline;
+    margin-right: .75em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul#navigation li.last {
+    margin-right: 0;
+}
