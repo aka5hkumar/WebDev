@@ -1,0 +1,64 @@
+{
+	"Products":[
+	{
+	"Name":"Macbook Air",
+	"Price":"900",
+  "Store":"Apple"
+
+	},
+  {
+  "Name":"Surface Book",
+  "Price":"1500",
+  "Store":"Microsoft"
+
+  },
+  {
+  "Name":"Pixel XL",
+  "Price":"800",
+  "Store":"Google"
+
+  },
+  {
+  "Name":"iPhone 7",
+  "Price":"700",
+  "Store":"Apple"
+
+  },
+  {
+  "Name":"Nvidia GTX 1080",
+  "Price":"650",
+  "Store":"Newegg"
+
+  },
+  {
+  "Name":"Makerbot Replicator+",
+  "Price":"2500",
+  "Store":"Amazon"
+
+  },
+  {
+  "Name":"Roomba 980",
+  "Price":"900",
+  "Store":"Amazon"
+
+  },
+  {
+  "Name":"DJI Mavic",
+  "Price":"1000",
+  "Store":"Amazon"
+
+  },
+  {
+  "Name":"Boosted Board",
+  "Price":"1500",
+  "Store":"Amazon"
+
+  },
+  {
+  "Name":"LG OLED",
+  "Price":"3300",
+  "Store":"Amazon"
+
+  }
+	]
+}

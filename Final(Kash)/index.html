@@ -1,0 +1,172 @@
+<head>
+    <title>Kash</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Expletus+Sans" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="well text-center" id="Banner">
+            <h1> Kash </h1>
+            <h2 id="totalSaved">$$$ saved so far</h2>
+        </div>
+        <div class="text-center" id="Goals">
+            <div  class="col-md-6 col-xs-12   text-center" id="Goal1">
+                <h4>Mavic</h4>
+                <button type="button" class="text-center" data-toggle="modal" data-target="#one">
+                <div class="circle filled example1" data-fill="100"></div>
+              </button>
+                <p> 100% of goal </p>
+            </div>
+            <div class="col-md-6 col-xs-12 text-center id="Goal2"">
+                <h4>Titan X</h4>
+                <button type="button" class="text-center" data-toggle="modal" data-target="#two">
+                <div class="circle filled example2" data-fill="50"></div>
+              </button>
+                <p> 50% of goal </p>
+            </div>
+            <div class="col-md-4 col-xs-12 text-center hide" id="Goal3">
+                <h4>Goal Three</h4>
+                <button type="button" class="text-center" data-toggle="modal" data-target="#three">
+                <div class="circle filled example3" data-fill="25"></div>
+              </button>
+                <p> 0% of goal </p>
+            </div>
+        </div>
+        <div class="well text-center" id="addButton" value='hide/show'>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#four">+ADD+</button>
+        </div>
+    </div>
+    </div>
+
+    </div>
+    </div>
+    </div>
+    <div id="modals">
+        <div class="modal fade" id="one" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h3 class="modal-title">Mavic Pro</h3>
+                    </div>
+                    <div class="modal-body well">
+                        <p>Cost: $1000
+                            <p>
+                                <p>Monthly payment: $100</p>
+                                <p>Payments remaining: 0</p>
+                                <p> Amount remaining: $0</p>
+                                <p>Amount paid: $1000 </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+        <div class="modal fade" id="two" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h3 class="modal-title">Titan X</h3>
+                    </div>
+                    <div class="modal-body well">
+                        <p>Cost: $1000
+                            <p>
+                                <p>Monthly payment: $100</p>
+                                <p>Payments remaining: 5</p>
+                                <p> Amount remaining: $500</p>
+                                <p>Amount paid: $500 </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+        <div class="modal fade" id="three" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h3 class="modal-title">Macbook Pro</h3>
+                    </div>
+                    <div class="modal-body well">
+                        <p>Cost: $3000
+                            <p>
+                                <p>Monthly payment: $300</p>
+                                <p>Payments remaining: 10</p>
+                                <p> Amount remaining: $3000</p>
+                                <p>Amount paid: $0 </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+        <div class="modal fade" id="four" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h3 class="modal-title">Goal Three</h3>
+                    </div>
+                    <div class="modal-body well">
+                      <div id="hide">
+                          <div class=" well col-xs-12">
+                              <div class="form-group">
+                                  <label for="product"> What would you like?</label>
+                                  <input type="text" class="form-control" id="product">
+                              </div>
+                            <label for="price"> How much does it cost? </label>
+                              <input type="text" class="form-control" id="cost">
+
+                              <!-- <div class="container"> -->
+                              <!-- <div class="row"> -->
+                              <!-- <div class='well col-sm-6'> -->
+                              <!-- <div class="form-group"> -->
+                              <label for="date">When would you like it by?</label>
+                              <div class='input-group date' id='datetimepicker1'>
+                                  <input type='text' class="form-control" />
+                                  <span class="input-group-addon">
+                                      <span class="glyphicon glyphicon-calendar"></span>
+                                  </span>
+                              </div>
+                              <button class="btn btn-primary btn-sm center"type="button" aria-label="Submit" id="submitButton">Submit</button>
+</div>
+
+                          <!-- <script type="text/javascript">
+                              $(function() {
+                                  $('#datetimepicker1').datetimepicker();
+                              });
+                          </script> -->
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script language="javascript" type="text/javascript" src="js/script.js"></script>
+</body>
