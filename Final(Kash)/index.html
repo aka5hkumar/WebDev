@@ -1,42 +1,73 @@
 <head>
     <title>Kash</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Expletus+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
 
 </head>
 
 <body>
-    <div class="container">
-
-        <div class="well text-center" id="Banner">
-            <h1> Kash </h1>
-            <h2 id="totalSaved">$$$ saved so far</h2>
+    <nav class="navbar navbar-inverse text-center">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Kash</a>
+            </div>
         </div>
-        <div class="text-center" id="Goals">
-            <div  class="col-md-6 col-xs-12   text-center" id="Goal1">
+    </nav>
+      <div class="container-fluid">
+        <div class="well text-center" id="Banner">
+
+            <h2 id="totalSaved">$1500 saved so far</h2>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="text-center " id="Goals">
+            <div class="col-md-6 col-xs-12 text-center " id="Goal1_6">
                 <h4>Mavic</h4>
                 <button type="button" class="text-center" data-toggle="modal" data-target="#one">
                 <div class="circle filled example1" data-fill="100"></div>
               </button>
                 <p> 100% of goal </p>
             </div>
-            <div class="col-md-6 col-xs-12 text-center id="Goal2"">
+            <div class="col-md-4 col-xs-12 text-center" id="Goal1_4">
+                <h4>Mavic</h4>
+                <button type="button" class="text-center" data-toggle="modal" data-target="#one">
+                <div class="circle filled example1" data-fill="100"></div>
+              </button>
+                <p> 100% of goal </p>
+            </div>
+            <div class="col-md-6 col-xs-12 text-center" id="Goal2_6">
                 <h4>Titan X</h4>
                 <button type="button" class="text-center" data-toggle="modal" data-target="#two">
                 <div class="circle filled example2" data-fill="50"></div>
               </button>
                 <p> 50% of goal </p>
             </div>
-            <div class="col-md-4 col-xs-12 text-center hide" id="Goal3">
-                <h4>Goal Three</h4>
+            <div class="col-md-4 col-xs-12 text-center" id="Goal2_4">
+                <h4>Titan X</h4>
+                <button type="button" class="text-center" data-toggle="modal" data-target="#two">
+                <div class="circle filled example2" data-fill="50"></div>
+              </button>
+                <p> 50% of goal </p>
+            </div>
+            <div class="col-md-4 col-xs-12 text-center" id="Goal3">
+                <h4 id="name3">Goal Three</h4>
                 <button type="button" class="text-center" data-toggle="modal" data-target="#three">
                 <div class="circle filled example3" data-fill="25"></div>
               </button>
                 <p> 0% of goal </p>
             </div>
         </div>
-        <div class="well text-center" id="addButton" value='hide/show'>
-            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#four">+ADD+</button>
+        <div class="well text-center" value='hide/show'>
+            <button id="addButton" type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#four">+ADD+</button>
         </div>
     </div>
     </div>
@@ -98,15 +129,15 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h3 class="modal-title">Macbook Pro</h3>
+                        <h3 class="modal-title" id="name3_modal">Macbook Pro</h3>
                     </div>
                     <div class="modal-body well">
-                        <p>Cost: $3000
-                            <p>
-                                <p>Monthly payment: $300</p>
-                                <p>Payments remaining: 10</p>
-                                <p> Amount remaining: $3000</p>
-                                <p>Amount paid: $0 </p>
+                        <p id="cost3">Cost: $2400 </p>
+                        <p>
+                            <p>Monthly payment: $200</p>
+                            <p>Payments remaining: 12</p>
+                            <p> Amount remaining: $2400</p>
+                            <p>Amount paid: $0 </p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -122,41 +153,35 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h3 class="modal-title">Goal Three</h3>
+                        <h3 class="modal-title" id="name3_title">Goal Three</h3>
                     </div>
                     <div class="modal-body well">
-                      <div id="hide">
-                          <div class=" well col-xs-12">
-                              <div class="form-group">
-                                  <label for="product"> What would you like?</label>
-                                  <input type="text" class="form-control" id="product">
-                              </div>
-                            <label for="price"> How much does it cost? </label>
-                              <input type="text" class="form-control" id="cost">
+                        <div id="hide">
+                            <div class=" well col-xs-12">
+                                <div class="form-group">
+                                    <label for="product"> What would you like?</label>
+                                    <input type="text" class="form-control" id="product">
+                                </div>
+                                <label for="price"> How much does it cost? </label>
+                                <input type="text" class="form-control" id="cost">
 
-                              <!-- <div class="container"> -->
-                              <!-- <div class="row"> -->
-                              <!-- <div class='well col-sm-6'> -->
-                              <!-- <div class="form-group"> -->
-                              <label for="date">When would you like it by?</label>
-                              <div class='input-group date' id='datetimepicker1'>
-                                  <input type='text' class="form-control" />
-                                  <span class="input-group-addon">
-                                      <span class="glyphicon glyphicon-calendar"></span>
-                                  </span>
-                              </div>
-                              <button class="btn btn-primary btn-sm center"type="button" aria-label="Submit" id="submitButton">Submit</button>
-</div>
+                                <!-- <div class="container"> -->
+                                <!-- <div class="row"> -->
+                                <!-- <div class='well col-sm-6'> -->
+                                <!-- <div class="form-group"> -->
+                                <label for="date">When would you like it by?</label>
+                                <input type="text" class="form-control" id="datepicker-12">
+                                <p></p>
+                                <button class="btn btn-success center-block btn-sm center" type="button" data-dismiss="modal" aria-label="Submit" id="submitButton">Submit</button>
+                            </div>
 
-                          <!-- <script type="text/javascript">
-                              $(function() {
-                                  $('#datetimepicker1').datetimepicker();
-                              });
+                            <!-- <script type="text/javascript">
+
                           </script> -->
-                      </div>
+                        </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close without saving</button>
                     </div>
                 </div>
                 <!-- /.modal-content -->
@@ -165,8 +190,40 @@
         </div>
         <!-- /.modal -->
     </div>
+    <div class="modal fade" id="startModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h3 class="modal-title text-center" id="startTitle">Instructions</h3>
+                </div>
+                <div id="instruct" class="modal-body well">
+                    <h2 id="Pick a goal" class="col-md-4 col-xs-12 text-center well">Pick a Goal</h2>
+                    <h2 id="Input the details" class="col-md-4 col-xs-12 text-center well">Input the Details</h2>
+                    <h2 id="Wait to save up" class="col-md-4 col-xs-12 text-center well">Wait for the Money</h2>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default  btn-success center-block" data-dismiss="modal">got it</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <div id="footer well text-center">
+        <div class="container">
+            <p class="text-muted">Akash Kumar 2016</p>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script language="javascript" type="text/javascript" src="js/script.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+
 </body>
+<footer>
+
+</footer>
